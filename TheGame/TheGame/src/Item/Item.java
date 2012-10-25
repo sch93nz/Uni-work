@@ -60,14 +60,7 @@ public class Item {
 	public String getTitle() {
 		return title;
 	}
-	/**
-	 * gets the value of the item it its honey form
-	 * @return
-	 */
-	public Honey Value() {
-		return new Honey(value);
-	}
-
+	
 	public ItemTP pack(int n) {
 		return new ItemTP(id,title,"Item", description, value, 0,0,'I',n);
 
