@@ -3,7 +3,14 @@
  */
 package GUI;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.geom.Ellipse2D;
+
 import javax.swing.JFrame;
+
+import data.User;
 
 /**
  * @author Matthew
@@ -11,7 +18,18 @@ import javax.swing.JFrame;
  */
 public class MainWindow extends JFrame {
 
+	public MainWindow(){
+		
+		setMinimumSize(new Dimension(500,700)); 
+		add(new contactsPanel(new User()),BorderLayout.EAST);
+		add(new TopicPanel("main"),BorderLayout.WEST);
+		
+		setVisible(true);
+	}
 	
 	
+public static void main (String[] args){
+	new MainWindow();
+}
 	
 }
