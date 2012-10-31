@@ -17,17 +17,27 @@ public class Topic {
 	private ArrayList<Message> messages = new ArrayList<Message>();
 	// the user who owns this topic
 	private String user;
+	// who ever this topic is t00
+	private String to;
 
 	// create a named topic
-	public Topic(String _name, String user) 
-	{
+	public Topic(String _name, String user, String to){
+		this.to=to;
 		this.user= user;
 		name = _name;
 	}
+	
+	public Topic(String _name, String user){
+		this.user= user;
+		name = _name;
+	}
+	
+	public Topic(){
+		name = "General";
+	}
 
 	// create a named topic
-	public Topic(String _name, ArrayList<Message> mes) 
-	{
+	public Topic(String _name, ArrayList<Message> mes){
 		name = _name;
 		messages.addAll(mes);
 	}

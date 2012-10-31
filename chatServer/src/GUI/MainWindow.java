@@ -19,11 +19,11 @@ import data.User;
 public class MainWindow extends JFrame {
 
 	public MainWindow(){
-		
+		super("CHAT");
 		setMinimumSize(new Dimension(500,700)); 
 		add(new contactsPanel(new User()),BorderLayout.EAST);
-		add(new TopicPanel("main"),BorderLayout.WEST);
-		
+		add(new TopicPanel(),BorderLayout.CENTER);
+		this.pack();
 		setVisible(true);
 	}
 	
