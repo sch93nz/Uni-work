@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bus Time Table</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="downloading">Just downloading the bus info this can be a bit big. You are advised to download it on wifi if you wish to miss this step then hit the next button otherwise please wait till it is finsihed.</string>
+	<string name="updating"> Or up dating the file..</string>
+	<string name="autoupdate">Would you like this program to auto update on start.</string>
+	<string name="next">Next</string>
+</resources>
